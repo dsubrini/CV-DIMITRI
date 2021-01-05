@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
   margin: 0;
@@ -6,17 +7,27 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.current-link {
+  color: white;
+}
+
 h1,
 h2,
-h3 {
-  font-family: 'Permanent Marker', cursive, sans-serif;
+h3,
+a {
+  font-family: 'Press Start 2P', 'Permanent Marker', cursive, sans-serif;
 }
 
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 3px;
+  perspective: 2px;
 }
 
 .section {
@@ -33,12 +44,39 @@ h3 {
 }
 
 .bg1 {
-  font-size: 6em;
+  font-size: 2em;
+  color: black;
+  line-height: 3em;
+  z-index: -2;
+}
+
+@keyframes opacityOnAndOff {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+dot {
+  animation: opacityOnAndOff 1.5s infinite ease-out;
+}
+
+.bg2 {
+  z-index: -2;
+}
+
+.bg3 {
+  z-index: -2;
 }
 
 @media (max-width: 800px) {
   .bg1 {
-    font-size: 3em;
+    font-size: 1em;
   }
 }
 
@@ -55,14 +93,24 @@ h3 {
 }
 
 .static {
-  background: red;
   height: 30vh;
+  background-color: #031a19;
 }
 
 .bg1::after {
-  background-image: url('https://placekitten.com/g/900/700');
+  background-image: url('/assets/Logo_Dim.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .bg2::after {
-  background-image: url('https://placekitten.com/g/800/600');
+  background-image: url('/assets/logo-react-js.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bg3::after {
+  background-image: url('/assets/logo\ node\ JS.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
