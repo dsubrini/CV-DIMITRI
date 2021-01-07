@@ -9,7 +9,9 @@
 }
 
 #nav {
-  background-color: #053f3e;
+  background-color: #ff6633;
+  background-image: url('/assets/dim-fond-opti.jpg');
+  background-position: center;
   position: fixed;
   display: flex;
   align-items: center;
@@ -17,6 +19,13 @@
   height: 10vh;
   width: 100%;
   z-index: 10;
+  font-size: 2em;
+}
+
+@media (max-width: 850px) {
+  #nav {
+    background-size: cover;
+  }
 }
 
 #nav ul {
@@ -37,7 +46,7 @@ a {
 }
 
 #nav ul a.current-link {
-  color: red;
+  color: black;
 }
 
 .wrapper {
@@ -58,6 +67,12 @@ a {
   text-shadow: 0 0 5px #000;
   padding: 3em;
   text-align: left;
+}
+
+@media (max-width: 850px) {
+  .section {
+    padding-left: 4em;
+  }
 }
 
 .card {
@@ -97,6 +112,24 @@ a {
   text-align: center;
 }
 
+.experience_content {
+  width: 40vw;
+  background-color: #ff6633;
+  display: flex;
+  padding: 2em;
+  margin: 1em;
+  border-radius: 4px;
+}
+
+.diplomes_content {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 1em;
+}
+
 .bg1 {
   font-size: 2em;
   color: black;
@@ -124,6 +157,10 @@ dot {
   animation: opacityOnAndOff 1.5s infinite ease-out;
 }
 
+.bg1 {
+  height: 50vh;
+}
+
 .bg2 {
   z-index: -2;
 }
@@ -132,7 +169,7 @@ dot {
   z-index: -2;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .bg1 {
     font-size: 1em;
   }
@@ -150,9 +187,29 @@ dot {
   z-index: -1;
 }
 
-.static {
+.section.static {
   height: 30vh;
-  background-color: #031a19;
+  background-color: #ff6633;
+  background-image: url('/assets/dim-fond-opti.jpg');
+  font-size: 3.5em;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 850px) {
+  .section.static {
+    height: 15vh;
+    font-size: 1.5em;
+    background-size: cover;
+  }
+}
+
+.bg1::after {
+  background-image: url('/assets/LogoDim.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
 }
 
 .bg2::after {
