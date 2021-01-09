@@ -17,7 +17,9 @@ const createCardElement = (data, parentElement) => {
     const img = document.createElement('img');
     const p = document.createElement('p');
 
-    img.src = item.image;
+    // img.src = item.image;
+    img.setAttribute('data-src', item.image);
+    img.classList.add('lazy');
     p.innerHTML = item.title;
     div.classList.add('card');
     div.appendChild(img);
@@ -50,3 +52,16 @@ wrapperElement.onscroll = function () {
     }
   }
 };
+
+const io = new IntersectionObserver((entries) =>
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const image = entry.target;
+      console.log(image);
+      image.src = image.dataset.src;
+      io.unobserve(image);
+    }
+  })
+);
+
+document.querySelectorAll('.lazy').forEach((element) => io.observe(element));

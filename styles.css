@@ -307,3 +307,27 @@ a {
   background-position: center;
   opacity: 0.2;
 }
+
+.bg4::after {
+  background-image: url('/assets/npm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.bg5::after {
+  background-image: url('/assets/github.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.bg6::after {
+  background-image: url('/assets/git.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
