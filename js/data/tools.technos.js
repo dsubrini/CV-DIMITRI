@@ -1,26 +1,26 @@
 export default [
   {
     title: 'npm',
-    image: '/assets/logo node JS.png',
+    image: '/assets/npm.png',
   },
   {
     title: 'VSC',
-    image: '/assets/logo node JS.png',
+    image: '/assets/vsc.png',
   },
   {
     title: 'git',
-    image: '/assets/logo node JS.png',
+    image: '/assets/git.png',
   },
   {
     title: 'github',
-    image: '/assets/logo node JS.png',
+    image: '/assets/github.png',
   },
   {
     title: 'notion.so',
-    image: '/assets/logo node JS.png',
+    image: '/assets/Notion.png',
   },
   {
     title: 'slack',
-    image: '/assets/logo node JS.png',
+    image: '/assets/slack.png',
   },
 ];

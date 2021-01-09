@@ -5,22 +5,22 @@ export default [
   },
   {
     title: 'express',
-    image: '/assets/logo node JS.png',
+    image: '/assets/expressjs.png',
   },
   {
     title: 'symfony',
-    image: '/assets/logo node JS.png',
+    image: '/assets/Synfony.png',
   },
   {
     title: 'mysql',
-    image: '/assets/logo node JS.png',
+    image: '/assets/mysql.png',
   },
   {
     title: 'postgres',
-    image: '/assets/logo node JS.png',
+    image: '/assets/postgres.png',
   },
   {
     title: 'mongoDB',
-    image: '/assets/logo node JS.png',
+    image: '/assets/mongodb-logo.png',
   },
 ];

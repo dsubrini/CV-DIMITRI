@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>CV Dimitri Subrini</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="nav">
-        <ul>
-            <a class="nav_links current-link" href="#home">Accueil</a>
-            <a class="nav_links" href="#front">Front End</a>
-            <a class="nav_links" href="#back">Back End</a>
-            <a class="nav_links" href="#tools">Outils</a>
-            <a class="nav_links" href="#experience">Experience</a>
-            <a class="nav_links" href="#diplomes">Diplômes</a>
-        </ul>
+      <ul>
+        <a class="nav_links current-link" href="#home">Accueil</a>
+        <a class="nav_links" href="#front">Front End</a>
+        <a class="nav_links" href="#back">Back End</a>
+        <a class="nav_links" href="#tools">Outils</a>
+        <a class="nav_links" href="#experience">Experience</a>
+        <a class="nav_links" href="#diplomes">Diplômes</a>
+      </ul>
     </nav>
     <main class="wrapper">
-        <section class="section parallax bg1" id="home">
-            <h1>Dimitri Subrini</h1>
-            <h3>Developpeur Javascript React<dot>.</dot></h3>
-        </section>
-        <section class="section static front_end">
-            <h2 class="main_title">Mes technologies en Front</h2>
-        </section>
-        <section class="section parallax bg2" id="front">
-        </section>
-        <section class="section static back_end">
-            <h2 class="main_title">Mes technologies en Back</h2>
-        </section>
-        <section class="section parallax bg3" id="back">
-        </section>
-        <section class="section static tools">
-            <h2 class="main_title">Outils Externes</h2>
-        </section>
-        <section class="section parallax bg3" id="tools">
-        </section>
-        <section class="section static experience">
-            <h2 class="main_title">Experiences</h2>
-        </section>
-        <section class="section parallax bg3" id="experience">
-            <div class="experience_content">
-                <ul>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                </ul>
-            </div>
-            <div class="experience_content">
-                <ul>
-                    <li>test</li>
-                    <li>test</li>
-                    <li>test</li>
-                </ul>
-            </div>
-        </section>
-        <section class="section static diplome">
-            <h2 class="main_title">Diplômes</h2>
-        </section>
-        <section class="section parallax bg3" id="diplomes">
-            <div class="diplomes_content"><p>2020 O'Clock</p><img src="/assets/Logo javascript.png" alt=""></div>
-            <div class="diplomes_content"><img src="/assets//logo-react-js.png" alt=""><p>2018 Openclassrooms</p></div>
-        </section>
+      <section class="section parallax bg1" id="home">
+        <div class="home">
+          <h1>Dimitri Subrini</h1>
+          <h3>Developpeur Javascript React</h3>
+          <p>31 ans - Freelance remote</p>
+        </div>
+        <div class="logo_home">
+          <img src="/assets/LogoDim.png" alt="logo dimitri subrini" />
+        </div>
+      </section>
+      <section class="section static front_end">
+        <h2 class="main_title">Technologies Front maitrisées</h2>
+      </section>
+      <section class="section parallax bg2" id="front"></section>
+      <section class="section static back_end">
+        <h2 class="main_title">Technologies Back maitrisées</h2>
+      </section>
+      <section class="section parallax bg3" id="back"></section>
+      <section class="section static tools">
+        <h2 class="main_title">Outils Externes</h2>
+      </section>
+      <section class="section parallax bg3" id="tools"></section>
+      <section class="section static experience">
+        <h2 class="main_title">Mes experiences</h2>
+      </section>
+      <section class="section parallax bg3" id="experience">
+        <div class="experience_content">
+          <div class="circle_border">
+            <span>Independant depuis 2018</span>
+          </div>
+          <div class="circle_border">
+            <span>26 projets</span>
+          </div>
+          <div class="circle_border">
+            <span>4 ans d'experience</span>
+          </div>
+          <div class="circle_border">
+            <span>117 branches</span>
+          </div>
+          <div class="circle_border">
+            <span>927 commits</span>
+          </div>
+        </div>
+      </section>
+      <section class="section static diplome">
+        <h2 class="main_title">Diplômes</h2>
+      </section>
+      <section class="section parallax bg3" id="diplomes">
+        <div class="diplomes_content">
+          <p>2020 O'Clock</p>
+          <img src="/assets/oclock.png" alt="" />
+        </div>
+        <div class="diplomes_content">
+          <img src="/assets/ocr.png" alt="" />
+          <p>2018 Openclassrooms</p>
+        </div>
+        <div class="diplomes_content">
+          <p>2017 - Aujourd'hui Autodidacte</p>
+          <img src="/assets/LogoDim.png" alt="" />
+        </div>
+      </section>
     </main>
     <script type="module" src="js/script.js"></script>
-</body>
+  </body>
 </html>

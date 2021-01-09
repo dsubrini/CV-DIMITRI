@@ -4,35 +4,35 @@ export default [
     image: '/assets/logo-react-js.png',
   },
   {
-    title: 'jest',
-    image: '/assets/logo node JS.png',
-  },
-  {
     title: 'javascript',
-    image: '/assets/Logo javascript.png',
+    image: '/assets/Javascript.png',
   },
   {
     title: 'html',
-    image: '/assets/Logo javascript.png',
+    image: '/assets/HTML5.png',
   },
   {
     title: 'css',
-    image: '/assets/Logo javascript.png',
+    image: '/assets/css.png',
   },
   {
     title: 'redux',
-    image: '/assets/Logo javascript.png',
+    image: '/assets/redux.png',
   },
   {
     title: 'Sass',
-    image: '/assets/Logo javascript.png',
+    image: '/assets/Sass.png',
   },
   {
     title: 'bootstrap',
-    image: '/assets/Logo javascript.png',
+    image: '/assets/bootstrap.png',
   },
   {
     title: 'semantic ui',
-    image: '/assets/Logo javascript.png',
+    image: '/assets/semantic ui.png',
+  },
+  {
+    title: 'jest',
+    image: '/assets/Jest.png',
   },
 ];
