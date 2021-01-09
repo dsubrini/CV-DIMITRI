@@ -17,7 +17,7 @@
 
 #nav {
   background-color: #ff6633;
-  background-image: url('/assets/dim-fond-opti.jpg');
+  background-image: url('./assets/dim-fond-opti.jpg');
   background-position: center;
   position: fixed;
   display: flex;
@@ -271,7 +271,7 @@ a {
 .section.static {
   height: 20vh;
   background-color: #ff6633;
-  background-image: url('/assets/dim-fond-opti.jpg');
+  background-image: url('./assets/dim-fond-opti.jpg');
   font-size: 2.5em;
   align-items: center;
   flex-wrap: nowrap;
@@ -286,14 +286,14 @@ a {
 }
 
 .bg1::after {
-  background-image: url('/assets/ci.svg');
+  background-image: url('./assets/ci.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .bg2::after {
-  background-image: url('/assets/logo-react-js.png');
+  background-image: url('./assets/logo-react-js.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -301,7 +301,7 @@ a {
 }
 
 .bg3::after {
-  background-image: url('/assets/logo\ node\ JS.png');
+  background-image: url('./assets/logo\ node\ JS.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -309,7 +309,7 @@ a {
 }
 
 .bg4::after {
-  background-image: url('/assets/npm.png');
+  background-image: url('./assets/npm.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -317,7 +317,7 @@ a {
 }
 
 .bg5::after {
-  background-image: url('/assets/github.png');
+  background-image: url('./assets/github.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -325,7 +325,7 @@ a {
 }
 
 .bg6::after {
-  background-image: url('/assets/git.png');
+  background-image: url('./assets/git.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
