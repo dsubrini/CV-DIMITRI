@@ -2,31 +2,17 @@ import frontTechnos from './data/front.technos.js';
 import backTechnos from './data/back.technos.js';
 import toolsTechnos from './data/tools.technos.js';
 
+import { createCardElement } from './createElements.js';
+
 const wrapperElement = document.querySelector('.wrapper');
 const frontElement = document.getElementById('front');
 const backElement = document.getElementById('back');
 const toolsElement = document.getElementById('tools');
 const parallaxSections = document.querySelectorAll('.parallax');
-
-const navLinks = document.getElementsByClassName('nav_links');
-const arrayNavLinks = Array.from(navLinks);
-
-const createCardElement = (data, parentElement) => {
-  data.map((item) => {
-    const div = document.createElement('div');
-    const img = document.createElement('img');
-    const p = document.createElement('p');
-
-    // img.src = item.image;
-    img.setAttribute('data-src', item.image);
-    img.classList.add('lazy');
-    p.innerHTML = item.title;
-    div.classList.add('card');
-    div.appendChild(img);
-    div.appendChild(p);
-    parentElement.appendChild(div);
-  });
-};
+const navElement = document.getElementById('nav');
+const navMobileElement = document.getElementById('mobile_nav');
+const mobileNavButton = document.getElementById('toggle_nav');
+const mobileNavLinks = document.querySelectorAll('.mobile_nav_links');
 
 createCardElement(frontTechnos, frontElement);
 createCardElement(backTechnos, backElement);
@@ -38,7 +24,6 @@ let i = 0;
 Array.prototype.forEach.call(parallaxSections, function (e) {
   parallaxArray[e.id] = e.offsetTop - 500;
 });
-console.log(parallaxArray);
 
 wrapperElement.onscroll = function () {
   let scrollPosition = wrapperElement.scrollTop;
@@ -53,15 +38,19 @@ wrapperElement.onscroll = function () {
   }
 };
 
-const io = new IntersectionObserver((entries) =>
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const image = entry.target;
-      console.log(image);
-      image.src = image.dataset.src;
-      io.unobserve(image);
-    }
-  })
-);
+const navigationInit = () => {
+  window.screen.width >= 1100 ? navMobileElement.remove() : navElement.remove();
+  window.screen.width >= 1100 ? mobileNavButton.remove() : null;
+};
 
-document.querySelectorAll('.lazy').forEach((element) => io.observe(element));
+navigationInit();
+
+mobileNavButton.addEventListener('click', () => {
+  navMobileElement.classList.add('display');
+});
+
+mobileNavLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    navMobileElement.classList.remove('display');
+  });
+});

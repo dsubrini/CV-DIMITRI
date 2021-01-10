@@ -1,0 +1,48 @@
+#nav {
+  background-color: #ff6633;
+  background-image: url('./../assets/dim-fond-opti.jpg');
+  background-position: center;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 90%;
+  z-index: 10;
+  font-size: 1.8em;
+  left: 50%;
+  margin-left: -45%;
+  border-radius: 4px;
+}
+
+#nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#nav ul a {
+  text-decoration: none;
+  height: 100%;
+  color: white;
+  margin: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav ul a.current-link {
+  height: 80%;
+  width: 4.5em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 2px solid #ff6633;
+  border-radius: 4px;
+  color: black;
+  transition: 0.5s;
+}

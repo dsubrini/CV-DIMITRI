@@ -1,0 +1,76 @@
+#mobile_nav {
+  background-color: #ff6633;
+  background-image: url('./../assets/dim-fond-opti.jpg');
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 60%;
+  z-index: 10;
+  font-size: 1.8em;
+  border-radius: 4px;
+  left: -60%;
+  transition: left 0.2s ease-out;
+}
+
+#mobile_nav.display {
+  left: 0;
+  transition: left 0.2s ease-out;
+}
+
+@keyframes toRight {
+  from {
+    left: -60%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+#mobile_nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 80%;
+  padding-left: 0.5em;
+}
+
+#mobile_nav ul a {
+  text-decoration: none;
+  height: 80%;
+  color: white;
+  margin: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#mobile_nav ul a.current-link {
+  width: 4.5em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 2px solid #ff6633;
+  border-radius: 4px;
+  color: black;
+  transition: 0.5s;
+}
+
+#toggle_nav {
+  position: fixed;
+  text-decoration: none;
+  top: 2%;
+  left: 3%;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  z-index: 9;
+}

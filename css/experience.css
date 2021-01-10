@@ -1,0 +1,38 @@
+.experience_content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.experience_content .circle_border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 270px;
+  height: 270px;
+  border-radius: 100%;
+  background-color: #ff6633;
+  margin: 2em;
+  transition: 0.2s;
+  box-shadow: 8px 9px 4px 1px rgba(5, 63, 62, 0.33);
+}
+
+.circle_border:hover {
+  transform: scale(1.05);
+}
+
+.experience_content span {
+  display: flex;
+  position: absolute;
+  margin: 1.5em;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  width: 240px;
+  border-radius: 100%;
+  background-color: white;
+  color: black;
+  font-size: 1.5em;
+}
