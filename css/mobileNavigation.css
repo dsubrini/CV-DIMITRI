@@ -71,6 +71,14 @@ a {
   border-radius: 100%;
   height: 30px;
   width: 30px;
-  background-color: red;
+  padding-bottom: 0.05em;
+  background-color: black;
+  color: #ff6633;
+  text-shadow: 1px 1px 1px white, 0 0 1em #ff6633, 0 0 0.2em #ff6633;
   z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  box-shadow: 3px 3px 2px 1px rgba(5, 63, 62, 0.33);
 }

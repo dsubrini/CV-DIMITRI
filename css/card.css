@@ -13,6 +13,13 @@
   margin-top: 0.5em;
 }
 
+@media (max-width: 950px) {
+  .card {
+    padding: 0;
+    margin-top: 2em;
+  }
+}
+
 .card:hover {
   transform: scale(1.05);
 }

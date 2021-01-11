@@ -1,30 +1,62 @@
 .diplomes_content {
   width: 80vw;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 1em;
+  padding: 0.2em;
+  border-radius: 4px;
+  box-shadow: 6px 6px 6px 6px rgba(5, 63, 62, 0.33);
+}
+
+.diplomes_content div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.diplomes_content div p {
+  text-align: left;
+}
+
+.diplomes_content img {
+  height: 300px;
+  width: 300px;
+  box-shadow: 0 0 33px rgba(5, 63, 62, 0.33);
 }
 
 @media (max-width: 950px) {
   .diplomes_content {
-    width: 70%;
+    width: 300px;
+    height: 450px;
     flex-direction: column;
+    padding: 0.4em;
   }
 
-  .diplomes_content img {
-    width: 70%;
+  .diplomes_content div {
+    margin: 1em;
   }
 }
 
 @media (max-width: 500px) {
+  #diplomes {
+    padding: 0;
+    align-items: center;
+  }
+
   .diplomes_content {
-    width: 90%;
+    width: 270px;
     flex-direction: column;
   }
 
   .diplomes_content img {
     width: 90%;
+  }
+
+  .diplomes_content div p {
+    width: 200px;
   }
 }
